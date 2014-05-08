@@ -1,0 +1,22 @@
+{
+    "NovaServers.boot_server": [
+        {
+            "args": {
+                "flavor_id": 2,
+                "image_id": "d48609f5-45dc-469a-8093-90a8b9f2441f"
+            },
+            "runner": {
+                "type": "constant",
+                "times": 15,
+                "active_users": 1
+            },
+            "context": {
+                "users": {
+                    "tenants": 1,
+                    "users_per_tenant": 1
+                }
+            }
+        }
+    ]
+}
+

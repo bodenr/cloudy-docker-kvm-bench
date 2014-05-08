@@ -1,0 +1,25 @@
+{
+    "NovaServers.boot_and_bounce_server": [
+        {
+            "args": {
+                "flavor_id": 2,
+                "image_id": "d48609f5-45dc-469a-8093-90a8b9f2441f",
+                "actions": [
+                    {"soft_reboot": 5}
+                ]
+            },
+            "runner": {
+                "type": "constant",
+                "times": 5,
+                "active_users": 1
+            },
+            "context": {
+                "users": {
+                    "tenants": 1,
+                    "users_per_tenant": 1
+                }
+            }
+        }
+    ]
+}
+

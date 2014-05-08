@@ -1,0 +1,22 @@
+{
+    "NovaServers.snapshot_server": [
+        {
+            "args": {
+                "flavor_id": 2,
+                "image_id": "8a65aba2-2e6e-4a73-999f-2d4cc7c39d5e"
+            },
+            "runner": {
+                "type": "constant",
+                "times": 1,
+                "active_users": 1
+            },
+            "context": {
+                "users": {
+                    "tenants": 1,
+                    "users_per_tenant": 1
+                }
+            }
+        }
+    ]
+}
+
